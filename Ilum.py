@@ -2,10 +2,10 @@ from flask import *
 app = Flask(__name__)
 @app.route("/", methods=["GET", "POST"])
 def ProcessResult():
-    Result = None
+    Result = ""
     if request.method == "POST":
-        Num1 = float(request.form.get("1stVALUE"))
-        Num2 = float(request.form.get("2ndVALUE"))
+        Num1 = float(request.form.get("num1"))
+        Num2 = float(request.form.get("num2"))
         Operation = request.form.get("OPERATION")
         if Operation == "1":
             Result = Num1 + Num2
