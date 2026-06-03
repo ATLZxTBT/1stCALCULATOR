@@ -7,6 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CALCULATOR</title>
 </head>
+<style>
+    *{text-align: center;
+        font-family: Arial, serif;
+        padding: 5px;
+    }
+    h1{
+        color: #21b5b5;
+        font-size: 1.6rem;
+    }
+</style>
 <body>
     <div class="MainHEADER">
         <h1>Calculator</h1>
@@ -15,7 +25,7 @@
     <div class="Operation">
         <form action="/" method="POST">
             <label for="1stVALUE">1st Value</label>
-            <input type="number" id="1stVALUE" name="1stVALUE" required>
+            <input type="number" id="1stVALUE" name="num1" required>
             <br><br>
             <label for="OPERATION">Operation: </label>
             <select id="OPERATION" name="OPERATION">
@@ -26,7 +36,7 @@
             </select>
             <br><br>
             <label for="2ndVALUE">2ndVALUE</label>
-            <input type="number" id="2ndVALUE" name="2ndVALUE" required>
+            <input type="number" id="2ndVALUE" name="num2" required>
             <br><br><br>
             <button type="submit">Submit</button>
         </form>
