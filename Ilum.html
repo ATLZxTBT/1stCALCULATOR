@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CALCULATOR</title>
+</head>
+<body>
+    <div class="MainHEADER">
+        <h1>Calculator</h1>
+        <p>Choose two values and an operation:</p>
+    </div>
+    <div class="Operation">
+        <form action="/Process" method="POST">
+            <label for="1stVALUE">1st Value</label>
+            <input type="number" id="1stVALUE" name="1stVALUE" required>
+            <br><br>
+            <label for="OPERATION">Operation: </label>
+            <select id="OPERATION" name="OPERATION">
+                <option value="Add">+</option>
+                <option value="Subtract">-</option>
+                <option value="Multiply">×</option>
+                <option value="Divide">÷</option>
+            </select>
+            <br><br>
+            <label for="2ndVALUE">2ndVALUE</label>
+            <input type="number" id="2ndVALUE" name="2ndVALUE" required>
+            <br><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="RESULT">
+        <p>RESULT: </p>
+    </div>
+</body>
+</html>
