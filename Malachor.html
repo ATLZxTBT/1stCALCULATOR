@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>InvestingSimulatorByATLZx</title>
+</head>
+<style>
+    *{text-align: center;
+        font-family: Arial, serif;
+        padding: 5px;
+    }
+    h1{
+        color: #21b5b5;
+        font-size: 1.6rem;
+    }
+</style>
+<body>
+    <div class="MainHEADER">
+        <h1>Compound interest</h1>
+        <p>Fill following information below</p>
+    </div>
+    <div class="Operation">
+        <form action="/" method="POST">
+            <label for="MainValue">Main Value (R$)</label>
+            <input type="number" id="MainValue" name="MV" required>
+            <br><br>
+            <label for="MonthlyTaxes">Monthly interest rate (%)</label>
+            <input type="number" id="MonthlyTaxes" name="MT" required>
+            <br><br>
+            <label for="Months">Time in months</label>
+            <input type="number" id="Months" name="Months" required>
+            <br><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <br><br><br><br>
+    <div class="Result">
+        <h1>Results</h1>
+        <p>Final amount:</p>
+        <p>{{ Result }}</p>
+    </div>
+</body>
+</html>
